@@ -36,7 +36,7 @@ environmental variables should be used setting them up...
 
 ```
 DICTYUSER_USER  -  dictyuser(default)
-DICTYUSER_PASSWORD - userpass(default)
+DICTYUSER_PASSWORD - dictyuserpass(default)
 DICTYUSER_DB - dictyuser(default)
 ```
 
