@@ -1,12 +1,11 @@
 # Postgresql docker image
 This is a source repository for [docker](http://docker.io) image designed to
-run [postgresql](https://en.wikipedia.org/wiki/PostgreSQL) database instance in
-docker container. It is based on the generic alpine postgresql
-[image](https://store.docker.com/images/postgres). The documentation of base
-docker is also applicable here.
+run `dictyuser` database instance in docker container. It is based on the
+generic alpine postgresql [image](https://store.docker.com/images/postgres).
+The documentation of base docker image is also applicable here.
 
 ## Supported tags
-Should have all supported tags and links to source dockerfile.
+- [1.0.0, latest (Dockerfile)](https://github.com/dictybase-docker/dictyuser-postgres/blob/1.0.0/Dockerfile)
 
 ## Additional features
 ### Configuration files
@@ -36,7 +35,9 @@ user, password and database during the initialization process. The following
 environmental variables should be used setting them up...
 
 ```
-Add there or more environmental variables here. Also add them to docker file.
+DICTYUSER_USER  -  dictyuser(default)
+DICTYUSER_PASSWORD - userpass(default)
+DICTYUSER_DB - dictyuser(default)
 ```
 
 ## Usage
@@ -59,6 +60,5 @@ For details look [here](https://github.com/docker-library/docs/tree/master/postg
 ## Deploy
 The container is intended to be deployed in [kubernetes](http://kubernetes.io)
 using [helm](https://github.com/kubernetes/helm). Use the corresponding
-[chart]()
-for  deployment. 
-
+[chart](https://github.com/dictybase-docker/kubernetes-charts/tree/master/dictyuser-postgres)
+for deployment. 
